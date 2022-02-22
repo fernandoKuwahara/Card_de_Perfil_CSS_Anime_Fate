@@ -26,3 +26,5 @@
 ### Ou
 ### -1290x1290
 
+## Gostou e quer ver o Projeto? Acesse o Link Abaixo:
+- https://fernandokuwahara.github.io/Card_de_Perfil_CSS_Anime_Fate/
