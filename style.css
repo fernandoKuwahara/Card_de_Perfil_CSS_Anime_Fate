@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, white, #303134);
+}
+
+a{
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(22, 21, 21, 0.267);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container:hover{
+    height: 450px;
+    width: 350px;
+}
+
+.container #photoProfile{
+    border-radius: 10px;
+    height: 250px;
+    transform: rotate(0deg);
+    transition: 0.6s;
+    z-index: 6;
+    box-shadow: 0 5px 20px rgba(61, 58, 58, 0.466);
+}
+
+.container:hover #photoProfile{
+    height: 0;
+    transform: rotate(360deg);
+}
+
+.container .content{
+    position: absolute;
+    width: 350px;
+    left: 0%;
+    top: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    z-index: 5;
+}
+
+.container:hover .content{
+    opacity: 1;
+    visibility: visible;
+    left: 8%;
+    transition-delay: 0.5s;
+}
+
+.container .content2{
+    position: absolute;
+    width: 180px;
+    text-align: justify;
+    text-indent: 10px;
+    left: 0%;
+    top: 40%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.container:hover .content2{
+    left: 8%;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.8s;
+}
+
+.container .socialMedia{
+    position: absolute;
+    right: 12%;
+    bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.container .socialMedia img{
+    height: 50px;
+    margin: 5px;
+    border-radius: 2rem;
+}
+
+.container .socialMedia #facebook {
+    z-index: 4;
+    position: relative;
+    bottom: .8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container .socialMedia #github {
+    z-index: 3;
+    position: relative;
+    bottom: 4.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container .socialMedia #instagram {
+    z-index: 2;
+    position: relative;
+    bottom: 8.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container .socialMedia #linkdln {
+    z-index: 1;
+    position: relative;
+    bottom: 12rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container:hover #facebook{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1.2s;
+}
+
+.container:hover #github{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1.6s;
+}
+
+.container:hover #instagram{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 2s;
+}
+
+.container:hover #linkdln{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 2.4s;
+}
